@@ -26,7 +26,7 @@ To start the server, run:
 npm start
 ```
 
-Access the application at http://localhost:5000 (or the port specified in your configuration).
+Access the application at http://localhost:3000 (or the port specified in your configuration).
 
 ## License
 
