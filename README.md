@@ -10,7 +10,7 @@ This is a RESTful API built with Node.js and Express that manages a collection o
 
 2. Navigate to the project directory:
    ```bash
-   cd your-repo-name
+   cd Express-RESTful-API-
    ```
 
 3. Install dependencies:
