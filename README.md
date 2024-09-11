@@ -5,7 +5,7 @@ This is a RESTful API built with Node.js and Express that manages a collection o
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/rashimarakkar/Express-RESTful-API-.git
    ```
 
 2. Navigate to the project directory:
