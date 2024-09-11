@@ -9,7 +9,7 @@ const cors = require("cors");
 // Middleware
 app.use(express.json()); //  it will convert JSON string into a JavaScript object and attach it to req.body, allowing you to easily work with the data.
 app.use(helmet()); // Add security headers to avoid various threats
-app.use(cors());   // Enable CORS for cross-origin requests
+app.use(cors()); // Enable CORS for cross-origin requests
 
 // Routes
 app.use("/api/products", products_routes);

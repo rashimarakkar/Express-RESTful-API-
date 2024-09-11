@@ -13,8 +13,8 @@ const getProduct = async (req, res) => {
   try {
     const product = await Product.findOne({ _id: req.params.productID });
     if (!product) {
-        return res.status(404).json({ msg: "Product not found" });
-      }
+      return res.status(404).json({ msg: "Product not found" });
+    }
     res.status(200).json({ product });
   } catch (error) {
     res.status(500).json({ msg: error.message });
@@ -38,8 +38,8 @@ const updateProduct = async (req, res) => {
       { new: true, runValidators: true }
     );
     if (!product) {
-        return res.status(404).json({ msg: "Product not found" });
-      }
+      return res.status(404).json({ msg: "Product not found" });
+    }
     res.status(200).json({ message: "Product updated successfully", result });
   } catch (error) {
     res.status(500).json({ msg: error.message });
@@ -52,8 +52,8 @@ const deleteProduct = async (req, res) => {
       _id: req.params.productID,
     });
     if (!product) {
-        return res.status(404).json({ msg: "Product not found" });
-      }
+      return res.status(404).json({ msg: "Product not found" });
+    }
     res.status(200).json({ message: "Product deleted successfully", product });
   } catch (error) {
     res.status(500).json({ msg: error.message });
